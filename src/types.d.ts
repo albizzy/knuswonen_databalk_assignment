@@ -8,12 +8,19 @@ export interface MainNavRouteProps {
 
 interface DataProps {
     mainNavRoutes: MainNavRouteProps[];
+    heroLinkButtons: ButtonProps[];
 }
 
 export interface ButtonProps {
     icon?: string | React.ReactNode;
     imageIcon?: string | StaticImport;
     label: string;
+    classes?: string;
+    a?: boolean;
+    link?: string;
+    type?: 'button' | 'submit' | 'reset';
+    disabled?: boolean;
+    onClick?: () => void;
 }
 
 export interface IconButtonProps extends ButtonProps {

@@ -1,9 +1,10 @@
 import Background from "@/app/assets/HeroBackground.png";
 import Image from "next/image";
+import HeroLinks from "./heroLinks";
 
 const Hero = () => {
     return (
-        <div className="w-full h-[560px] bg-blue-500">
+        <div className="w-full h-full md:h-[560px] bg-blue-500">
             <div className="w-full h-[560px] relative overflow-hidden">
                 <Image
                     src={Background}
@@ -11,7 +12,9 @@ const Hero = () => {
                     fill
                     className="absolute w-full h-full object-cover"
                 />
-                <div className="w-full h-full relative"></div>
+                <div className="w-full h-full relative flex justify-center items-end pb-6">
+                    <HeroLinks/>
+                </div>
             </div>
         </div>
     );

@@ -1,8 +1,9 @@
-import { MainNavRouteProps, DataProps, IconButtonProps } from "@/types";
+import { MainNavRouteProps, DataProps, ButtonProps } from "@/types";
 
-// icons for nav buttons
-import ProfileIcon from "@/app/assets/icons/profile-icon.svg";
-import SearchIcon from "@/app/assets/icons/search-icon.svg";
+// image icons
+import HammerIcon from "@/app/assets/icons/HammerIcon.svg";
+import ChatCircleIcon from "@/app/assets/icons/ChatsCircle.svg";
+import HandDepositIcon from "@/app/assets/icons/HandDepositIcon.svg";
 
 const mainNavRoutes: MainNavRouteProps[] = [
     {
@@ -23,17 +24,33 @@ const mainNavRoutes: MainNavRouteProps[] = [
     },
 ]
 
-const navButtons: IconButtonProps[] = [
+const heroLinkButtons: ButtonProps[] = [
     {
-        imageIcon: SearchIcon,
+        label: 'Reparatie melden',
+        imageIcon: HammerIcon,
+        type: 'button',
+        link: '#',
+        classes: 'text-[#39468C]',
     },
     {
-        imageIcon: ProfileIcon,
+        label: 'Huur betalen',
+        imageIcon: HandDepositIcon,
+        type: 'button',
+        link: '#',
+        classes: 'text-[#39468C]',
+    },
+    {
+        label: 'Contact',
+        imageIcon: ChatCircleIcon,
+        type: 'button',
+        link: '#',
+        classes: 'text-[#39468C]',
     },
 ]
 
 const data: DataProps = {
     mainNavRoutes,
+    heroLinkButtons,
 }
 
 export default data;
