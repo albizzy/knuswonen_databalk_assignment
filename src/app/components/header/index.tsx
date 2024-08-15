@@ -38,7 +38,7 @@ const Header = () => {
     return (
         <nav
             ref={navRef} 
-            className="w-screen h-[80px] z-50 bg-white sticky top-0 left-0 px-4 md:px-10 lg:px-32 shadow-lg shadow-black/5"
+            className="w-screen h-[80px] z-50 bg-white fixed top-0 left-0 px-4 md:px-10 lg:px-32 shadow-lg shadow-black/5"
         >
             <div className="w-full h-fit bg-white rounded-lg md:rounded-none flex flex-wrap items-center justify-between">
                 <div className="w-fit h-[80px] flex items-center">

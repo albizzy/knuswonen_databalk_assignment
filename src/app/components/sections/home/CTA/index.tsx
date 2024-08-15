@@ -19,7 +19,7 @@ const CTA:React.FC<CTAContentProps> = ({
             <div className={`w-full h-full flex items-center py-8 md:py-4 px-4 md:px-10 lg:px-32 gap-2`}>
                 {/* Image Section */}
                 <div className={`w-full h-fit flex ${ isImageStart ? "flex-col md:flex-row" : "flex-col-reverse md:flex-row-reverse"} items-center`}>
-                    <div className={`relative w-[383px] h-[304px] md:w-[601px] md:h-[479px] mt-8 ${!isImageStart && "w-[398px] h-[317px] md:w-[560.5px] md:h-[440px] mt-20"}`}>
+                    <div className={`relative w-[383px] h-[304px] md:w-[601px] md:h-[479px] md:mt-8 ${!isImageStart && "w-[398px] h-[317px] md:w-[560.5px] md:h-[440px] md:mt-20"}`}>
                         <CustomImage 
                             src={imageSrc} 
                             alt={title}
