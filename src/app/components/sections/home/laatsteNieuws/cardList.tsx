@@ -38,7 +38,7 @@ const CardList = () => {
                     />
                 ))}
             </div>
-            <div className="w-full flex items-center justify-end">
+            <div className="w-full flex items-center justify-center md:justify-end">
                 <Button
                     isTextButton
                     label="Bekijk alle nieuwsberichten"

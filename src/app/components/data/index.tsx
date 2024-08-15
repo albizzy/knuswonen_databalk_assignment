@@ -2,7 +2,8 @@ import {
     MainNavRouteProps, 
     DataProps, 
     ButtonProps,
-    CardProps, 
+    CardProps,
+    CTAContentProps, 
 } from "@/types";
 
 // hero icons
@@ -15,6 +16,10 @@ import Telefoone from "@/app/assets/images/telefoonstoring.png";
 import Energie1 from "@/app/assets/images/energiebesparing.png";
 import Energie2 from "@/app/assets/images/energietoeslag.png";
 import ArrowIcon from "@/app/assets/icons/ArrowIcon.svg";
+
+// images for CTA section
+import CTAImage1 from "@/app/assets/images/CTAimage1.png";
+import CTAImage2 from "@/app/assets/images/CTAImage2.png";
 
 const mainNavRoutes: MainNavRouteProps[] = [
     {
@@ -89,10 +94,32 @@ const cardsContent: CardProps[] = [
     },
 ]
 
+const ctaContents: CTAContentProps[] = [
+    {
+        isImageStart: true,
+        imageSrc: CTAImage1,
+        title: 'We verbeteren onze woningen',
+        description: ['Bij KnusWonen zetten we ons in om onze woningen energiezuiniger en duurzamer te maken. We verbeteren de isolatie met dubbelglas en plaatsen moderne cv-ketels en zonnepanelen. Hierdoor stijgt het wooncomfort, dalen de energiekosten, en verminderen we de CO2-uitstoot. Ons doel is dat al onze huurders kunnen genieten van een warme, veilige en toekomstbestendige woning','Wilt u meer weten over onze energiebesparende maatregelen?'],
+        buttonText: "Lees meer",
+        gradientType: 'green',
+        titleColor: 'text-[#35BCE7]'
+    },
+    {
+        isImageStart: false,
+        imageSrc: CTAImage2,
+        title: 'Schrijf je in voor onze nieuwsbrief',
+        description: ['Wil je als eerste op de hoogte zijn van het laatste nieuws over jouw woning en buurt? Schrijf je dan in voor de nieuwsbrief van KnusWonen! Iedere maand sturen we je een update met belangrijk nieuws, praktische tips, en informatie over onderhoudsprojecten en buurtactiviteiten. Of je nu wilt weten wanneer er werkzaamheden gepland zijn, of je geïnteresseerd bent in nieuwe initiatieven in de wijk, onze nieuwsbrief zorgt ervoor dat je niets mist...', 'Schrijf je vandaag nog in en blijf verbonden met KnusWonen!'],
+        buttonText: "Inschrijven",
+        gradientType: 'orange',
+        titleColor: 'text-[#FF6B38]'
+    },
+]
+
 const data: DataProps = {
     mainNavRoutes,
     heroLinkButtons,
     cardsContent,
+    ctaContents,
 }
 
 export default data;

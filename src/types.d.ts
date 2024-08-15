@@ -6,10 +6,15 @@ export interface MainNavRouteProps {
     path: string;
 }
 
-interface DataProps {
+export interface DataProps {
     mainNavRoutes: MainNavRouteProps[];
     heroLinkButtons: ButtonProps[];
     cardsContent: CardProps[];
+    ctaContents: CTAContentProps[];
+}
+
+export interface CTADataProps {
+    ctaContents: CTAContentProps[];
 }
 
 export interface ButtonProps {
@@ -65,4 +70,14 @@ export interface CardProps {
     icon?: string;
     linkText?: string;
     linkImageIcon?: string | StaticImport;
+}
+
+export interface CTAContentProps {
+    imageSrc: string | StaticImageData | StaticImport;
+    isImageStart?: boolean;
+    title: string;
+    titleColor?: string;
+    description: string | string[];
+    buttonText?: string;
+    gradientType?: 'green' | 'orange';
 }

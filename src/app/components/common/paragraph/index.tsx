@@ -1,4 +1,5 @@
 import { ParagraphProps } from "@/types";
+import { Span } from "next/dist/trace";
 
 const Paragraph: React.FC<ParagraphProps> = ({
     as: Tag = 'p',
@@ -12,7 +13,7 @@ const Paragraph: React.FC<ParagraphProps> = ({
                 text.map((part, index) => (
                     <span key={index}>
                         {part}
-                        {index < text.length - 1 && <br/>}
+                        {index < text.length - 1 && (<span><br/><br/></span>)}
                     </span>
                 ))
             ) : (
