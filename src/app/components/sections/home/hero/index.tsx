@@ -12,7 +12,7 @@ const Hero = () => {
                     fill
                     className="absolute w-full h-full object-cover"
                 />
-                <div className="w-full h-full relative flex justify-center items-end pb-6">
+                <div className="w-full h-full relative flex justify-center items-end pb-6 bg-black/30">
                     <HeroLinks/>
                 </div>
             </div>

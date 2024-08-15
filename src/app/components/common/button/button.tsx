@@ -49,7 +49,7 @@ const Button:React.FC<ButtonProps | TextButtonProps> = ({
         ? "bg-transparent p-0 w-auto"
         : isGradientButton
         ? `px-[24px] py-[8px] w-fit rounded-[8px] ${gradientStyles}`
-        : "p-4 w-[288px] h-[64px] capitalize shadow-lg bg-white shadow-black/5 rounded-xl";
+        : "p-4 w-[235px] lg:w-[288px] h-[64px] capitalize shadow-lg bg-white shadow-black/5 rounded-xl";
 
     const button = (
         <button

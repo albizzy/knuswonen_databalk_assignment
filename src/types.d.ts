@@ -1,5 +1,6 @@
 import { StaticImport, StaticImageData } from "next/dist/shared/lib/get-img-props";
 import React from "react";
+import UsefulLinks from "./app/components/usefulLinks";
 
 export interface MainNavRouteProps {
     label: string;
@@ -12,6 +13,7 @@ export interface DataProps {
     cardsContent: CardProps[];
     ctaContents: CTAContentProps[];
     footerContents: FooterContentSectionProps[];
+    usefulLinks: UsefulLinksProps[];
 }
 
 export interface CTADataProps {
@@ -108,4 +110,13 @@ export interface FooterContentSectionProps {
     isLink: boolean;
     isImage: boolean;
     link: string;
+  }
+
+  export interface UsefulLinksProps {
+    label: string;
+    link: string;
+  }
+
+  export interface UsefulLinksGroupProps {
+    links: UsefulLinksProps[];
   }

@@ -4,7 +4,8 @@ import {
     ButtonProps,
     CardProps,
     CTAContentProps,
-    FooterContentSectionProps, 
+    FooterContentSectionProps,
+    UsefulLinksProps, 
 } from "@/types";
 
 // hero icons
@@ -188,12 +189,28 @@ const footerContents: FooterContentSectionProps[] = [
     }
 ]
 
+const usefulLinks: UsefulLinksProps[] = [
+    {
+        label: "Privacy",
+        link: '#',
+    },
+    {
+        label: "Cookieverklaring",
+        link: '#',
+    },
+    {
+        label: "Disclaimer",
+        link: '#',
+    },
+]
+
 const data: DataProps = {
     mainNavRoutes,
     heroLinkButtons,
     cardsContent,
     ctaContents,
     footerContents,
+    usefulLinks,
 }
 
 export default data;

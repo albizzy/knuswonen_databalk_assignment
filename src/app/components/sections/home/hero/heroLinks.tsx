@@ -13,8 +13,8 @@ const HeroLinks = () => {
 
     return (
         <div className="w-fit flex items-start flex-col gap-y-3">
-            <h2 className="text-2xl text-white">Waarmee kunnen we je helpen?</h2>
-            <div className="w-full flex flex-col justify-center md:justify-start md:flex-row items-center gap-x-6 gap-y-4">
+            <h2 className="text-2xl text-white text-center max-w-sm md:max-w-xl">Waarmee kunnen we je helpen?</h2>
+            <div className="w-full flex flex-col justify-center md:justify-start md:flex-row items-center gap-x-4 lg:gap-x-6 gap-y-4">
                 {heroLinkButtons.map((button, index) => (
                     <Button
                         type={button.type}

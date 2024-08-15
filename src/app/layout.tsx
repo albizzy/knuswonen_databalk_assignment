@@ -5,6 +5,7 @@ import "./globals.css";
 // components
 import Header from "./components/header";
 import Footer from "./components/footer";
+import UsefulLinks from "./components/usefulLinks";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <UsefulLinks />
         </div>
       </body>
     </html>

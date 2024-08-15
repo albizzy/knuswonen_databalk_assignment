@@ -24,7 +24,7 @@ const CardList = () => {
                     classes="text-[32px] text-center md:text-left"
                 />
             </div>
-            <div className="w-full justify-center items-center flex flex-col md:flex-row gap-6">
+            <div className="w-full justify-center items-center flex flex-col md:flex-row gap-4 lg:gap-6">
                 {cardContents.map((cardContent, index) => (
                     <Card
                         key={index}
