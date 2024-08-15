@@ -5,7 +5,7 @@ import "./globals.css";
 // components
 import Header from "./components/header";
 
-const poppins = Poppins({ weight: "600", subsets: ["latin"] });
+const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "KnusWonen | home",
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <div className="w-full h-full grow relative">
+        <div className="w-full h-full grow relative overflow-x-hidden">
           <Header />
           <main className="w-full h-full">
             {children}

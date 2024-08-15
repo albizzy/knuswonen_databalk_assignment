@@ -1,8 +1,8 @@
-import { ButtonProps } from "@/types";
+import { ButtonProps, TextButtonProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 
-const Button:React.FC<ButtonProps> = ({
+const Button:React.FC<ButtonProps | TextButtonProps> = ({
     icon,
     imageIcon,
     label,
@@ -12,15 +12,20 @@ const Button:React.FC<ButtonProps> = ({
     type = 'button',
     onClick,
     disabled,
+    isTextButton = false,
+    isGradientButton = false,
+    gradientType = 'green',
+    textSize = 'text-lg',
+    textColor = "text-[#39468C]"
 }) => {
     const buttonContent = (
-        <div className="flex justify-start items-center">
-            <div className="flex gap-x-3">
+        <div className={`flex ${ isTextButton ? "justify-end" : "justify-start"}items-center`}>
+            <div className={`flex items-center ${isTextButton ? "flex-row-reverse" : "flex-row"} gap-x-3`}>
                 {icon && (
                     <span>{icon}</span>
                 )}
                 {imageIcon && (
-                    <div className="w-[32px] h-[32px] relative overflow-hidden">
+                    <div className={`${ isTextButton ? "w-[16px] h-[16px]" : "w-[32px] h-[32px]"} relative overflow-hidden`}>
                         <Image
                             src={imageIcon}
                             alt={`${label} icon`}
@@ -29,15 +34,27 @@ const Button:React.FC<ButtonProps> = ({
                         />
                     </div>
                 )}
-                <span className="text-lg font-semibold">{label}</span>
+                <span className={`${textSize} ${textColor} font-semibold`}>{label}</span>
             </div>
         </div>
-    )
+    );
+
+    // Conditional gradient styles
+    const gradientStyles =
+        gradientType === "green"
+            ? "bg-gradient-to-r from-[#BFE27D] to-[#35BCE7]"
+            : "bg-gradient-to-r from-[#FF6B38] to-[#FFD201]";
+
+    const buttonStyles = isTextButton
+        ? "bg-transparent p-0 w-auto"
+        : isGradientButton
+        ? `p-2 w-full ${gradientStyles}`
+        : "p-4 w-[288px] h-[64px] capitalize shadow-lg bg-white shadow-black/5 rounded-xl";
 
     const button = (
         <button
             type={type}
-            className={`p-4 w-[288px] h-[64px] capitalize shadow-lg bg-white shadow-black/5 rounded-xl ${classes}`}
+            className={`${buttonStyles} ${classes}`}
             disabled={disabled}
             onClick={onClick}
         >

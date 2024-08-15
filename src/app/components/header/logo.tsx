@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Mark from "../../assets/Mark.png";
-import WordMark from "../../assets/Path 63.png"
+import Mark from "../../assets/images/Mark.png";
+import WordMark from "../../assets/images/Path 63.png"
 
 const Logo = () => {
     return (
