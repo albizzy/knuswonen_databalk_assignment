@@ -11,7 +11,7 @@ const Heading: React.FC<HeadingProps> = ({
     color = 'text-[#39468C]',
 }) => {
     return (
-        <Tag className={`text-center md:text-left ${overLock.className} ${color} ${classes}`}>
+        <Tag className={`${overLock.className} ${color} ${classes}`}>
             {text}
         </Tag>
     );

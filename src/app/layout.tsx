@@ -4,6 +4,7 @@ import "./globals.css";
 
 // components
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <main className="w-full h-full pt-[80px]">
             {children}
           </main>
+          <Footer />
         </div>
       </body>
     </html>

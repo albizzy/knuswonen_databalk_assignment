@@ -3,7 +3,8 @@ import {
     DataProps, 
     ButtonProps,
     CardProps,
-    CTAContentProps, 
+    CTAContentProps,
+    FooterContentSectionProps, 
 } from "@/types";
 
 // hero icons
@@ -20,6 +21,10 @@ import ArrowIcon from "@/app/assets/icons/ArrowIcon.svg";
 // images for CTA section
 import CTAImage1 from "@/app/assets/images/CTAimage1.png";
 import CTAImage2 from "@/app/assets/images/CTAImage2.png";
+
+// social icons
+import FacebookIcon from "@/app/assets/icons/FacebookIcon.svg";
+import InstagramIcon from "@/app/assets/icons/InstagramIcon.svg";
 
 const mainNavRoutes: MainNavRouteProps[] = [
     {
@@ -115,11 +120,80 @@ const ctaContents: CTAContentProps[] = [
     },
 ]
 
+const footerContents: FooterContentSectionProps[] = [
+    {
+        title: "Bel of mail ons",
+        content: [
+            {
+                label: "Telefoonnummer",
+                value: "012-345 67 89"
+            },
+            {
+                label: "E-mail",
+                value: "klantenservice@knuswonen.nu",
+                isLink: true,
+                link: "#"
+            }
+        ]
+    },
+    {
+        title: "Openingstijden",
+        content: [
+            {
+                label: "Maandag t/m donderdag",
+                value: "Maandag t/m donderdag van 08:30 tot 12:00 uur,"
+            },
+            {
+                label: "Vrijdag",
+                value: "Vrijdag van 08:30 tot 12:00 uur"
+            }
+        ]
+    },
+    {
+        title: "Kom langs op afspraak",
+        content: [
+            {
+                label: "Adres",
+                value: "Straatweglaan 123"
+            },
+            {
+                label: "Adres",
+                value: "1234 AB Dorpstad"
+            },
+        ]
+    },
+    {
+    title: "Volg ons op onze sociale kanalen",
+        content: [
+            {
+                label: "Social media",
+                socialLinks: [
+                    {
+                        label: "Facebook",
+                        value: FacebookIcon,
+                        isLink: true,
+                        isImage: true,
+                        link: "#"
+                    },
+                    {
+                        label: "Instagram",
+                        value: InstagramIcon,
+                        isLink: true,
+                        isImage: true,
+                        link: "#"
+                    }
+                ]
+            }
+        ]
+    }
+]
+
 const data: DataProps = {
     mainNavRoutes,
     heroLinkButtons,
     cardsContent,
     ctaContents,
+    footerContents,
 }
 
 export default data;

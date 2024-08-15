@@ -11,6 +11,7 @@ export interface DataProps {
     heroLinkButtons: ButtonProps[];
     cardsContent: CardProps[];
     ctaContents: CTAContentProps[];
+    footerContents: FooterContentSectionProps[];
 }
 
 export interface CTADataProps {
@@ -81,3 +82,30 @@ export interface CTAContentProps {
     buttonText?: string;
     gradientType?: 'green' | 'orange';
 }
+
+export interface FooterContentItemProps {
+    label: string;
+    value: string;
+    isLink?: boolean;
+    isImage?: boolean;
+    link?: string;
+    image?: string | StaticImageData | StaticImport;
+}
+
+export interface FooterContentSectionProps {
+    title: string;
+    content: (FooterContentItemProps | SocialMediaLinkProps)[]; // Union type for content
+  }
+  
+  export interface SocialMediaLinkProps {
+    label: string;
+    socialLinks: SocialMediaLinkItemProps[];
+  }
+  
+  export interface SocialMediaLinkItemProps {
+    label: string;
+    value: string;
+    isLink: boolean;
+    isImage: boolean;
+    link: string;
+  }
