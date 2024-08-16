@@ -14,7 +14,7 @@ Follow these steps to install and run the project locally. These instructions ar
 
 ### Prerequisites
 
-- Node.js: Ensure that Node.js is installed on your machine. You can download it [here](https://nodejs.org/en).
+- [Node.js 18.18 or later](https://git-scm.com/): Ensure that Node.js is installed on your machine. You can download it [here](https://nodejs.org/en).
 - Git: If you want to clone the repository, Git should be installed. Download it [here](https://git-scm.com/).
 
 ### Installation Steps
