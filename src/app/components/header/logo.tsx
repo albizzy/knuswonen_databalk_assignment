@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import Mark from "../../assets/images/Mark.png";
 import WordMark from "../../assets/images/Path 63.png"
 
 const Logo = () => {
     return (
-        <div className="w-fit h-fit flex items-center gap-1">
+        <Link href="#" className="w-fit h-fit flex items-center gap-1">
             <div className="w-[48.09px] h-[40px] relative overflow-hidden">
                 <Image
                     src={Mark}
@@ -22,7 +23,7 @@ const Logo = () => {
                     className="absolute w-full h-full"
                 />
             </div>
-        </div>
+        </Link>
     );
 }
  
