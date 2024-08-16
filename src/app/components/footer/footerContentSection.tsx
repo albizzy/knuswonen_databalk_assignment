@@ -19,7 +19,7 @@ const FooterContentSection: React.FC<FooterContentSectionProps> = ({
             />
             <ul className="flex flex-col gap-2">
                 {content.map((item, index) => {
-                    if ("socialLinks" in item) {
+                    if ("socialLinks" in item) { // Type guard using 'in' opearator
                         return (
                         <li key={index} className="flex flex-row">
                             {item.socialLinks.map((socialLink, socialIndex) => (

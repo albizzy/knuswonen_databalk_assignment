@@ -14,7 +14,6 @@ const Header = () => {
 
     // listener for nav closing
     useEffect(() => {
-        // close nav listener
         window.addEventListener("click", closeNav);
 
         // clean up listener when component unmounts
