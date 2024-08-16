@@ -41,6 +41,11 @@ export interface TextButtonProps extends ButtonProps {
     label?: string;
 }
 
+export interface IconButtonProps extends ButtonProps {
+    imageIcon: string | StaticImport;
+    label?: string;
+}
+
 export interface HeadingProps {
     as?: React.ElementType;
     text: string;
@@ -50,11 +55,6 @@ export interface HeadingProps {
 
 export interface ParagraphProps extends HeadingProps {
     text: string | string[];
-}
-
-export interface IconButtonProps extends ButtonProps {
-    imageIcon: string | StaticImport;
-    label?: string;
 }
 
 export interface CustomImageProps {
