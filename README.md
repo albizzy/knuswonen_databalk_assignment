@@ -1,6 +1,6 @@
 # Responsive Homepage for Social Housing Corporation
 
-This project is a fully responsive homepage built using Next.js and TailwindCSS, based on a design provided via Figma. The goal was to create a pixel-perfect implementation of the desktop version of the homepage and ensure it functions seamlessly across various screen sizes, including tablets and mobile devices.
+This project is a fully responsive homepage built using [Next.js](https://nextjs.org/docs) and [TailwindCSS](https://tailwindcss.com/docs/installation), based on a design provided via Figma. The goal was to create a pixel-perfect implementation of the desktop version of the homepage and ensure it functions seamlessly across various screen sizes, including tablets and mobile devices.
 
 ## Figma Design
   
@@ -13,10 +13,12 @@ The design for this project was provided in a Figma file, accessible via the fol
 Follow these steps to install and run the project locally. These instructions are designed to be straightforward, so even if you're not a developer, you should be able to get the project up and running.
 
 ### Prerequisites
+
 - Node.js: Ensure that Node.js is installed on your machine. You can download it [here](https://nodejs.org/en).
 - Git: If you want to clone the repository, Git should be installed. Download it [here](https://git-scm.com/).
 
 ### Installation Steps
+
 1. Clone the repository (or download the zip):
 
     ```bash
@@ -54,6 +56,7 @@ Follow these steps to install and run the project locally. These instructions ar
 
 
 ### Approach to Responsiveness
+
 To ensure the homepage is fully responsive across different screen sizes, I employed the following approach:
 
 - **TailwindCSS Utility Classes**: TailwindCSS's utility-first approach made it easy to apply responsive styles directly within the JSX. For example, I used classes like sm:text-lg, md:px-4, and lg:flex-row to adjust typography, padding, and widths at various breakpoints.
